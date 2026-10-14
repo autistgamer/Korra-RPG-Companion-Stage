@@ -1,0 +1,37 @@
+project_name: "Korra RPG Companion"
+tagline: "Dice, sheet, clock & background deck for the Legend of Korra RPG card"
+visibility: "PUBLIC"
+position: "ADJACENT"
+tags:
+  - "RPG"
+  - "Dice"
+  - "Avatar"
+  - "Korra"
+  - "Tracker"
+config_schema:
+  type: object
+  properties:
+    strictTwoBeat:
+      type: boolean
+      default: true
+      title: "Strict two-beat resolution"
+    lockRolls:
+      type: boolean
+      default: true
+      title: "Anti-fishing (seeded rolls)"
+    eventEvery:
+      type: integer
+      default: 6
+      title: "Turns between event checks"
+    eventChance:
+      type: integer
+      default: 50
+      title: "Event probability %"
+    headless:
+      type: boolean
+      default: false
+      title: "Headless (no panel)"
+    startingDay:
+      type: integer
+      default: 1
+      title: "Starting day number"
